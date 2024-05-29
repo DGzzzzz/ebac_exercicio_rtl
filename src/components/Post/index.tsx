@@ -10,10 +10,10 @@ type Props = {
 
 const Post = ({ children, imageUrl }: Props) => (
     <div className={styles.post}>
-        <img className={styles['post-image']} src={imageUrl} />
+        <img className={styles['post-image']} src={imageUrl} alt='post' />
         <p className={styles['post-text']}> {children} </p>
         <PostComments />
     </div>
-);
+); 
 
 export default Post;
